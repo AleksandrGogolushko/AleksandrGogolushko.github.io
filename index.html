@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="./images/shortCutIcon1.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Aleksander Gogolushko Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="menuId" class="menu">
+          <ul class="menu_list">
+            <li class="menu_item"><a href="#intro">intro</a></li>
+            <li class="menu_item"><a href="#about">about</a></li>
+            <li class="menu_item"><a href="#skills">skills</a></li>
+            <li class="menu_item"><a href="#portfolio">portfolio</a></li>
+            <li class="menu_item"><a href="#contact">contact</a></li>
+          </ul>
+          <div id="lang" class="menuLang">
+            <div class="container">
+              <input type="checkbox" id="lang_switch">
+              <label for="lang_switch">
+                <span class="toggle-btn">
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="menubtn__bar">
+        <div class="btn">
+          <figure>
+            <img class="logo" src="./images/logoMobile.PNG" alt="Logo">
+            <img id="arrow" class="arrow" src="./images/arrow.png" alt="arrow">
+          </figure>
+        </div>
+      </div>
+      <section id="intro" class="centrTitle">
+        <div class="title translete">
+          <h1>aleksander gogolushko</h1>
+          <p>front-end developer</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div class="about_discript translete">
+          <h2 class="about_title">About</h2>
+          <p class="about_intro">Let me introduce myself</p>
+        </div>
+        <picture>
+            <source media="(max-width:640px)" srcset="./images/mini_my_foto.jpeg"> 
+            <source media="(min-width:640px)" srcset="./images/my_foto.jpeg"> 
+              <img class="my_foto" src="./images/my_foto.jpeg" alt="me">
+          </picture>
+        <div class="about_personInfo">
+          <div class="content_title translete">
+            <h3>personal information</h3>
+          </div>
+          <ul>
+            <li class="personInfo_str translete">
+              <p class="personInfo_subtitle">Full name:</p>
+              <p class="personInfo_text">Aleksander Gogolushko</p>
+            </li>
+            <li class="personInfo_str translete">
+              <p class="personInfo_subtitle">Date of birth:</p>
+              <p class="personInfo_text">02.09.1996</p>
+            </li>
+            <li class="personInfo_str">
+              <p class="personInfo_subtitle">E-mail:</p>
+              <p class="personInfo_text">
+                <a href="mailto:gogolushko@outlook.com" target="_blank">gogolushko@outlook.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="about_me translete">
+          <p class="content_title">about me</p>
+          <p class="about_me_text">
+            Hello, my name is Aleksander.
+          </p>
+          <p class="about_me_text">
+            Now I live in Minsk,Belarus.
+          </p>
+          <p class="about_me_text">
+            I want to grow as a front-end developer. Every day I learn
+            something new and developed in my direction.
+          </p>
+          <p class="about_me_text">
+            I love learning better ways to create seamless user experiences with
+            clean, efficient, and scalable code. I consider work an ongoing
+            education, and I'm always looking for opportunities to work with
+            those who are willing to share their knowledge as much as I want to
+            learn.
+          </p>
+          <p class="about_me_text">
+            In my free time, which is not so much, I like to hang out in
+            <a href="https://www.codewars.com/users/Bostong5?refreshed=true" target="_blank">Codewars.com</a>
+            and <a href="https://js.checkio.org/user/gogolushko/" target="_blank">Checkio.org</a>, but also I like reading books, my favorite
+            writers are Stephen King, Howard Lovecraft, Neil Gaiman. And also I lead an active lifestyle.  
+          </p>
+        </div>
+        <div class="resume">
+          <a href="#" class="translete">
+            <span class="resume_text">View my resume</span>
+          </a>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="mySkill_discript translete">
+          <h2 class="mySkill_title">Skills</h2>
+          <p class="mySkill_intro">description of my skills</p>
+        </div>
+        <div class="color_line_wraper">
+          <div id="line" class="color_line"></div>
+        </div>
+        <div class="skill_content">
+          <div id="logo_show" class="logo_skill">
+            <figure>
+              <img src="./images/html128.png" alt="html">
+              <img src="./images/css128.png" alt="css">
+              <img src="./images/js128.png" alt="js">
+              <img src="./images/jq128.png" alt="jq">
+              <img src="./images/github128.png" alt="github">
+              <img src="./images/webPack1.png" alt="webPack">
+              <img src="./images/gulp128.png" alt="gulp">
+              <img src="./images/nodejs.png" alt="node.js">
+            </figure>
+          </div>
+          <div class="color_line_wraper_down">
+            <div id="line_down" class="color_line_down"></div>
+          </div>
+          <div id="skill_text" class="skill_text">
+            <ul class="translete">
+              <li>Strong knowledge of HTML and CSS</li>
+              <li>Adaptive layout using flexbox and media queries</li>
+              <li>Optimal site display in all modern browsers</li>
+              <li>Compliance to W3C standards</li>
+              <li>Basic knowledge of JavaScript/jQuery. </li>
+              <li>Basic knowledge of WebPack,Gulp and Node.js</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio_discript translete">
+          <h2 class="portfolio_title">portfolio</h2>
+        </div>
+        <div class="project">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="contact" class="contact">
+        <div class="social">
+          <div class="translete">
+            <p>contacts</p>
+          </div>
+          <ul class="social_list">
+            <li class="social_str">
+              <a href="https://t.me/Bostong5" target="_blank">
+                <img src="./images/telegram64.png" alt="telegram"></a>
+            </li>
+            <li class="social_str">
+              <a href="https://vk.com/bostong5" target="_blank">
+                <img src="./images/vk64.png" alt="vk"></a>
+            </li>
+            <li class="social_str">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="./images/linkid64.png" alt="linkedin"></a>
+            </li>
+            <li class="social_str">
+              <a href="https://github.com/AleksandrGogolushko" target="_blank">
+                <img src="./images/git64.png" alt="github"></a>
+            </li>
+            <li class="social_str">
+              <a href="mailto:gogolushko@outlook.com" target="_blank">
+                <img src="./images/mail64.png" alt="mail"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="author translete">
+          <p>&copy; Aleksander Gogolushko 2020</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
