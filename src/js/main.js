@@ -83,7 +83,7 @@ let text_rus = [ "Александр Гоголушко", "Front-end разра�
 ,"посмотреть резюме","Навыки","Описание моих навыков", "Уверенные знания HTML и CSS;","Адаптивная верстка. Использование flexbox и медиа запросы.","Оптимизация отоброжения сайтов на всех современных браузерах."
 , "Соответствие стандартам W3C.","Базовые знания JS/jQuery.","Базовые знания Gulp ","Базовые знания Sass/Scss ", 
 "Портфолио","Верстка landing page по Psd макету, с исопльзованием Bootstrap 4, JavaScript и Gulp ","посетить","Горизонтальный  landing page: Animal-health"
-,"Верстка горизонтального landing page по Psd макету, с исопльзованием JavaScript,Scss и Gulp ","посетить","Контакты","&copy; Александр Гоголушко 2020"]
+,"Верстка горизонтального landing page по Psd макету, с исопльзованием JavaScript,Scss и Gulp ","посетить","Игра Камень-Ножницы-Бумага","Верстка игры Камень-Ножницы-Бумага, с исопльзованием JavaScript,Jquery,Scss и Gulp ","посетить","Контакты","&copy; Александр Гоголушко 2020"]
 
 let text_eng = ["aleksander gogolushko", "front-end developer",
  "About","Let me introduce myself","personal information","Full name:","Aleksander Gogolushko",
@@ -94,7 +94,7 @@ let text_eng = ["aleksander gogolushko", "front-end developer",
 "View my resume","Skills","description of my skills","Strong knowledge of HTML and CSS","Adaptive layout using flexbox and media queries",
 "Optimal site display in all modern browsers","Compliance to W3C standards","Basic knowledge of JS/jQuery.",
 "Basic knowledge of Gulp","Basic knowledge of Sass/Scss","portfolio","HTML coding landing page on Psd layout, using Bootstrap 4, JavaScript and Gulp ","visit"
-,"Horizontal landing page: Animal-health","HTML coding horizontal landing page on Psd layout, using JavaScript,Scss and Gulp","visit","contacts","&copy; Aleksander Gogolushko 2020"]
+,"Horizontal landing page: Animal-health","HTML coding horizontal landing page on Psd layout, using JavaScript,Scss and Gulp","visit","Game Rock-Scissors-Paper","HTML coding game Rock-Scissors-Paper, using JavaScript,jQuery,Scss and Gulp","visit","contacts","&copy; Aleksander Gogolushko 2020"]
 
 let switchLang = document.querySelector(".toggle-btn");
 let elementsMenu = document.querySelectorAll(".menu_item");
