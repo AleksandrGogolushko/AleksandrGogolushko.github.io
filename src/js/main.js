@@ -2,12 +2,12 @@ let menubtn = document.querySelector(".btn");
 let btn = document.querySelector("nav");
 let menu = document.getElementById("menuId");
 let main = document.querySelector("main");
-let logo = document.getElementById("arrow")
+let arrow = document.getElementById("arrow")
+let body = document.querySelector("body")
 
-
-menubtn.addEventListener("click", () => {
+arrow.addEventListener("click", () => {
   btn.classList.toggle("on")
-  logo.classList.toggle("reversArrow")
+  arrow.classList.toggle("reversArrow")
 })
 
 let anchors = document.querySelectorAll("a[href*='#']")
@@ -15,10 +15,7 @@ let anchors = document.querySelectorAll("a[href*='#']")
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    btn.classList.remove("on");
-    logo.classList.remove("reversArrow");
     const blockID = anchor.getAttribute('href').substr(1);
-   
     smoothScroll(blockID)
   })
 }
@@ -84,7 +81,6 @@ let text_rus = [ "Александр Гоголушко", "Front-end разра�
 , "Соответствие стандартам W3C.","Базовые знания JS/jQuery.","Базовые знания Gulp ","Базовые знания Sass/Scss ", 
 "Портфолио","Верстка landing page по Psd макету, с исопльзованием Bootstrap 4, JavaScript и Gulp ","посетить","Горизонтальный  landing page: Animal-health"
 ,"Верстка горизонтального landing page по Psd макету, с исопльзованием JavaScript,Scss и Gulp ","посетить","Игра Камень-Ножницы-Бумага","Верстка игры Камень-Ножницы-Бумага, с исопльзованием JavaScript,Jquery,Scss и Gulp ","посетить","Контакты","&copy; Александр Гоголушко 2020"]
-
 let text_eng = ["aleksander gogolushko", "front-end developer",
  "About","Let me introduce myself","personal information","Full name:","Aleksander Gogolushko",
  "Date of birth:","02.09.1996","about me","Hello, my name is Aleksander.","Now I live in Minsk,Belarus.",
@@ -146,10 +142,12 @@ function translateContent(arrText){
      }
 }
 
-
 window.addEventListener("scroll", skillAnimate, false)
 function skillAnimate() {
-   
+   if(btn.classList.contains("on")){
+      btn.classList.remove("on")
+      arrow.classList.remove("reversArrow")
+   }
   let sectionSkill = document.getElementById("skills");
   let line = document.getElementById("line");
   let logo = document.getElementById("logo_show")
@@ -164,3 +162,12 @@ function skillAnimate() {
   }
 }
  
+body.addEventListener("click",(e)=>{
+   let menu_elements = ["arrow","menu_item","toggle-btn","lang","menu","menu_list"]
+   if(btn.classList.contains("on")){
+      if(!menu_elements.includes(e.target.classList[0])){
+         btn.classList.remove("on")
+         arrow.classList.remove("reversArrow")
+      }
+   }
+})
