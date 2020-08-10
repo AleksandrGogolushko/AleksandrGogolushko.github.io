@@ -565,6 +565,10 @@ margin-bottom: 10px;
   margin-right: auto;
 }
 
+.telegramUI{
+  position: absolute;
+    top: 15%;
+}
 .screenShot img{
   width: 80%;
   height: auto;
@@ -704,6 +708,12 @@ body::-webkit-scrollbar-thumb{
   .project .sectionForP {
     width:90%;
     height: 120vw;
+}
+.project .sectionForP:last-child {
+  height: 95vw;
+}
+.telegramUI{
+  position: static;
 }
 .screenShot {
   width: 100%;
